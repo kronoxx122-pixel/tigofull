@@ -13,6 +13,8 @@ if (getenv('DATABASE_URL')) {
     $db_pass = $url['pass'] ?? null;
     $db_name = ltrim($url['path'] ?? '', '/');
     $db_port = $url['port'] ?? 5432;
+    // Neon require SSL
+    putenv("PGSSLMODE=require");
 }
 else {
     // Fallback to individual env vars or local defaults
