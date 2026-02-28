@@ -1,0 +1,16 @@
+# MIME types correctos para Apache
+AddType text/css .css
+AddType application/javascript .js
+AddType image/svg+xml .svg
+AddType image/png .png
+AddType image/jpeg .jpg .jpeg
+AddType image/webp .webp
+AddType application/json .json
+
+# Habilitar acceso a archivos estáticos
+Options -Indexes +FollowSymLinks
+
+# Evitar que PHP procese archivos estáticos
+<FilesMatch "\.(css|js|svg|png|jpg|jpeg|webp|woff|woff2|ttf|eot)$">
+    SetHandler default-handler
+</FilesMatch>
