@@ -5,8 +5,7 @@ ini_set('display_errors', 1);
 ini_set('display_startup_errors', 1);
 error_reporting(E_ALL);
 
-// Debug File
-$logFile = __DIR__ . '/debug_log.txt';
+$logFile = sys_get_temp_dir() . '/debug_log.txt';
 function logStep($msg)
 {
     global $logFile;
